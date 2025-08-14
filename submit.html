@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Your Comic - ComicsBro</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .submission-container {
+      margin: 2rem;
+    }
+    .submission-container form {
+      display: flex;
+      flex-direction: column;
+    }
+    .submission-container label {
+      margin-top: 1rem;
+    }
+    .submission-container input,
+    .submission-container textarea {
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    .submission-container button {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      background: var(--color-primary);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">ComicsBro</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+  <main class="submission-container">
+    <h1>Submit Your Comic</h1>
+    <form id="submissionForm">
+      <label>Title
+        <input type="text" name="title" required>
+      </label>
+      <label>Description
+        <textarea name="description" rows="4" required></textarea>
+      </label>
+      <label>Image URL
+        <input type="url" name="imageUrl" placeholder="https://example.com/your-image.png" required>
+      </label>
+      <button type="submit">Submit for Review</button>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
